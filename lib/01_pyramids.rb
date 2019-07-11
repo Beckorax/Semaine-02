@@ -1,8 +1,13 @@
-  # (1..10).each{|n| puts ("#" * n).rjust(i)}
+
+def half_pyramid
+	puts "Hello, tu veux une pyramide tordue de combien d'étages??"
+	i = gets.chomp.to_i
+	(1..i).each{|n| puts ("#" * n).rjust(i)}
+end
 
 
-  def half_pyramid
-	puts "rentrer un nombre"
+def full_pyramid
+	puts "Hello, tu veux une pyramide centrée de combien d'étages??"
 	i = gets.chomp.to_i
 	s = i
 	puts (" ")*(s) + ("#")
@@ -16,6 +21,7 @@ end
 
 def perform
 	half_pyramid
+	full_pyramid
 end
 
 
