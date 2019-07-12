@@ -18,7 +18,9 @@ end
 def full_pyramid # Pyramide centrée
    puts "Hello, tu veux une pyramide centrée de combien d'étages??"
    e = gets.chomp.to_i    # on contrôle que l'utilisateur entre bien un nombre entier pair
-   i = tests_etage (e)    s = i
+   i = tests_etage (e)   
+   s = i
+
    puts (" ")*(s) + ("#")
 
    for n in (1..i)
